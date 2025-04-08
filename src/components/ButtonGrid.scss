@@ -1,0 +1,29 @@
+// ButtonGrid
+.button-grid {
+    // display: 'grid';
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);// 4 cột đều nhau
+}
+
+// Buttons
+.cal-btn:hover{
+    background-color: #1997F8;
+}
+
+// Display
+.history-icon{
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    // transform: translateY(50%);
+    color: #6c757d;
+}
+.display-history{
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    background-color: #849DB0;
+    color: white;
+    min-width: 150px;
+    border-radius: 6px;
+}
