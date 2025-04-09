@@ -38,7 +38,7 @@ function Display({ value, onChange, onKeyDown = null, history = [], onClearHisto
                 {/* Hiển thị ds history nếu showHistory = true */}
                 {showHistory && (
                     <div className='display-history'>
-                        <ul className='list-unstyled mt-2'>
+                        <ul className='list-unstyled mt-2 d-flex flex-column align-items-start ms-3'>
                             {history.length == 0 ? (
                                 <li>Chưa có lịch sử</li>
                             ) : (// slice().reverse() để hiển thị lịch sử từ mới nhất đến cũ nhất
@@ -50,10 +50,10 @@ function Display({ value, onChange, onKeyDown = null, history = [], onClearHisto
                                     </li>
                                 ))
                             )}
-                            <span className='text-bg-warning btn btn-sm rounded px-2 float-end me-1 mb-1 mt-3'
-                                onClick={onClearHistory}
-                            >Clear</span>
                         </ul>
+                        <span className='text-bg-warning btn btn-sm rounded px-2 float-end me-1 mb-1 mt-3'
+                            onClick={onClearHistory}
+                        >Clear</span>
                     </div>
                 )}
             </div>
