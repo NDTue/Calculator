@@ -50,7 +50,7 @@ function Display({ value, onChange, onKeyDown = null, history = [], onClearHisto
                                     </li>
                                 ))
                             )}
-                            <span className='text-bg-warning btn rounded px-2 float-end me-1 mb-1 mt-3'
+                            <span className='text-bg-warning btn btn-sm rounded px-2 float-end me-1 mb-1 mt-3'
                                 onClick={onClearHistory}
                             >Clear</span>
                         </ul>
